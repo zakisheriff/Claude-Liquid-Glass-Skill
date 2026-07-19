@@ -111,11 +111,11 @@ haptic.** The result is UI that looks and feels genuinely native on iOS 26.
 
 ```
 Claude-Liquid-Glass-Skill/
-├── ios-liquid-glass/                        # The skill (drop this into .claude/skills/)
+├── claude-liquid-glass/                        # The skill (drop this into .claude/skills/)
 │   ├── SKILL.md                             # Core ruleset + frontmatter (name, description)
 │   └── references/
 │       └── liquid-glass-reference.md        # Extended reference & deep-dive snippets
-├── ios-liquid-glass.zip                     # Same skill, zipped — for claude.ai upload
+├── claude-liquid-glass.zip                     # Same skill, zipped — for claude.ai upload
 └── README.md
 ```
 
@@ -139,24 +139,24 @@ cd Claude-Liquid-Glass-Skill
 
 ```bash
 # Personal — available in all your projects
-cp -r ios-liquid-glass ~/.claude/skills/
+cp -r claude-liquid-glass ~/.claude/skills/
 
 # OR Project-scoped — shareable with your team via git
 mkdir -p .claude/skills
-cp -r ios-liquid-glass .claude/skills/
+cp -r claude-liquid-glass .claude/skills/
 ```
 
 ### 3. Install into Claude.ai / Desktop
 
 - Open **Settings → Capabilities / Skills → Upload skill**
-- Upload **`ios-liquid-glass.zip`**
+- Upload **`claude-liquid-glass.zip`**
 
 ### 4. Use It
 
 The skill auto-triggers on any iOS UI work. Or invoke it explicitly:
 
 ```
-/ios-liquid-glass
+/claude-liquid-glass
 ```
 
 Now ask Claude to "add a nav bar" or "make a button" — it will produce native Liquid Glass with haptics. 🎉
@@ -204,7 +204,7 @@ Now ask Claude to "add a nav bar" or "make a button" — it will produce native 
 ## 📜 How Claude Uses It
 
 - **Auto-trigger** — the `description` frontmatter makes Claude load the skill on any iOS UI task
-- **Explicit** — invoke `/ios-liquid-glass` in Claude Code
+- **Explicit** — invoke `/claude-liquid-glass` in Claude Code
 - **Review mode** — the skill includes an audit checklist for refactoring existing code to native Liquid Glass
 
 ---
@@ -212,11 +212,11 @@ Now ask Claude to "add a nav bar" or "make a button" — it will produce native 
 ## 🌐 Distribution
 
 ### Claude Code
-1. Copy `ios-liquid-glass/` into `~/.claude/skills/` (personal) or `.claude/skills/` (project)
+1. Copy `claude-liquid-glass/` into `~/.claude/skills/` (personal) or `.claude/skills/` (project)
 2. Commit the project-scoped copy to share with your team
 
 ### Claude.ai / Desktop
-1. Upload `ios-liquid-glass.zip` under Settings → Skills
+1. Upload `claude-liquid-glass.zip` under Settings → Skills
 2. Enable the skill for your workspace
 
 ---
