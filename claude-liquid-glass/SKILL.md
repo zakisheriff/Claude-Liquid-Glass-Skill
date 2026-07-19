@@ -1,20 +1,20 @@
 ---
 name: claude-liquid-glass
 description: >
-  Enforces native iOS 26+ Liquid Glass in ALL iOS UI — SwiftUI, UIKit, AND React Native / Expo
-  (via expo-glass-effect + expo-router NativeTabs). Covers buttons, icons, navbars, tab bars, search
-  bars, text inputs, sheets, cards, every interactive element. Two hard laws: (1) NEVER hand-roll or
-  custom-make Liquid Glass — always use the platform's own native component (SwiftUI `.glassEffect`/
+  Enforces native iOS 26+ Liquid Glass in all iOS UI — SwiftUI, UIKit, and React Native / Expo
+  (expo-glass-effect + expo-router NativeTabs). Covers buttons, icons, navbars, tab bars, search
+  bars, text inputs, sheets, cards, every interactive element. Two hard laws: (1) never hand-roll
+  or custom-make Liquid Glass — always use the platform's native component (SwiftUI `.glassEffect`/
   `.buttonStyle(.glass)`, or RN `GlassView`/`GlassContainer`/`NativeTabs`); never fake it with
-  BlurView/.ultraThinMaterial/opacity hacks on iOS. (2) EVERY touch fires a haptic — no exceptions.
-  Use whenever writing, reviewing, or refactoring any iOS UI code (Swift OR React Native/Expo), even
-  if the user just says "make a button" or "add a nav bar" without mentioning "liquid glass," "haptics,"
-  or "iOS 26." Trigger on SwiftUI views, buttons, NavigationStack/toolbar, TabView, .searchable,
-  TextField, sheets; and on RN/Expo Pressable/TouchableOpacity, expo-router layouts, expo-glass-effect,
-  expo-haptics, or any component styling / press-feedback decision.
+  BlurView/ultraThinMaterial/opacity on iOS. (2) every touch fires a haptic. Use when writing,
+  reviewing, or refactoring any iOS UI code (Swift or React Native/Expo), even if the user just
+  says "make a button" or "add a nav bar" without mentioning liquid glass, haptics, or iOS 26.
+  Trigger on SwiftUI views, buttons, NavigationStack/toolbar, TabView, .searchable, TextField,
+  sheets; and on RN/Expo Pressable/TouchableOpacity, expo-router layouts, expo-glass-effect,
+  expo-haptics, or any styling / press-feedback decision.
 ---
 
-# iOS Liquid Glass Skill
+# Claude Liquid Glass Skill
 
 Applies to **both** native Apple UI (SwiftUI/UIKit) **and React Native / Expo** apps targeting iOS 26+.
 
